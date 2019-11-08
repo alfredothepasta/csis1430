@@ -1,8 +1,15 @@
 /* NBlue #18121E Gunmetal #244247 Red #984843 Yellow #EAC67A */
 /* RGB val: NBlue (24,18,30) Gmetal (36, 66, 71) Red (152, 72, 67) Yellow (234,198,122) */
 
+
+/* Header and splash images
+------------------------------------------------------------- */
 header {
   background: #18121e;
+}
+
+header h1 {
+  font-size:5rem;
 }
 
 body {
@@ -11,14 +18,14 @@ body {
 }
 
 .splashImage {
-  background-image: url("/images/digital/Tea, earl grey, hot.jpg");
+  background-image: url("../images/digital/Tea, earl grey, hot.jpg");
   position: relative;
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   justify-content: center;
   margin: 0 auto;
-  max-height: 600px;
+  max-height: 900px;
 }
 
 .splashImage:after {
@@ -31,9 +38,9 @@ body {
   background: linear-gradient(
     90deg,
     rgba(24, 18, 30, 1) 0%,
-    rgba(24, 18, 30, 1) 10%,
+    rgba(24, 18, 30, 1) 15%,
     rgba(24, 18, 30, 0.35) 35%,
-    rgba(24, 18, 30, 0.35) 65%,
+    rgba(24, 18, 30, 0.35) 70%,
     rgba(24, 18, 30, 1) 90%,
     rgba(24, 18, 30, 1) 100%
   );
@@ -50,6 +57,43 @@ body {
   text-align: center;
 }
 
+
+/* Nav Bar
+---------------------------------------------------- */
+
 nav {
   background: #5e2d2a;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav li {
+  float: left;
+  padding: 0;
+  margin: 0;
+  border-right: black;
+}
+
+nav li a{
+  display: inline;
+  color: white;
+  padding: 2.5rem;
+  text-align: center;
+  font-size: 3rem;
+  text-decoration: none;
+  
+}
+
+nav li a:hover {
+  background-color: #984843;
+  color: white;
+}
+
+nav a.active {
+  background-color: #EAC67A;
 }
