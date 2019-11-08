@@ -1,6 +1,16 @@
 /* NBlue #18121E Gunmetal #244247 Red #984843 Yellow #EAC67A */
 /* RGB val: NBlue (24,18,30) Gmetal (36, 66, 71) Red (152, 72, 67) Yellow (234,198,122) */
 
+/* Generic classes
+------------------------------------------------------------- */
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
 
 /* Header and splash images
 ------------------------------------------------------------- */
@@ -34,11 +44,11 @@ body {
   justify-content: center;
   margin: 0 auto;
   max-height: 600px;
-  max-width: 1066px;
+  max-width: 1424px;
 }
 
 .splashImage:after {
-  padding-top: 56.25%;
+  padding-top: 42.125%;
   display: block;
   content: "";
 }
