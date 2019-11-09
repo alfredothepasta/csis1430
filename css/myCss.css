@@ -64,6 +64,15 @@ header h1 {
   text-align: center;
 }
 
+#blackOverlay {
+  background-color: #000;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
 /* Nav Bar
 ------------------------------------------------------------- */
 
@@ -153,3 +162,6 @@ main p {
 .gold-text {
   color: #eac67a;
 }
+
+/* 
+------------------------------------------------------------- */
