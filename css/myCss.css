@@ -21,6 +21,8 @@ header {
 
 header h1 {
   font-size: 5rem;
+  text-align: center;
+  top: 50%;
 }
 
 .splashImage {
@@ -61,11 +63,11 @@ header h1 {
 }
 
 .splashContent {
-  text-align: center;
+  vertical-align: center;
 }
 
 #blackOverlay {
-  background-color: #000;
+  background-color: #18121e;
   opacity: 0;
   position: absolute;
   top: 0;
