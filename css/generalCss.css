@@ -1,0 +1,189 @@
+/* NBlue #18121E Gunmetal #244247 Red #984843 Yellow #EAC67A */
+/* Darker Gunmetal: 16272b65 */
+/* RGB val: NBlue (24,18,30) Gmetal (36, 66, 71) Red (152, 72, 67) Yellow (234,198,122) */
+
+/* Generic classes
+------------------------------------------------------------- */
+.unselectable {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.centeredContent {
+  text-align: center;
+  justify-content: center;
+}
+
+.side-margin-small {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+/* Header and splash images
+------------------------------------------------------------- */
+h1.heading {
+  padding-bottom: 3rem;
+}
+
+header {
+  background: #18121e;
+}
+
+header h1 {
+  font-size: 5rem;
+  text-align: center;
+  top: 50%;
+}
+
+.splashImage {
+  background-image: linear-gradient(
+      90deg,
+      rgba(24, 18, 30, 1) 0%,
+      rgba(24, 18, 30, 1) 5%,
+      rgba(24, 18, 30, 0.35) 30%,
+      rgba(24, 18, 30, 0.35) 70%,
+      rgba(24, 18, 30, 1) 95%,
+      rgba(24, 18, 30, 1) 100%
+    ),
+    url("../images/digital/Tea, earl grey, hot.jpg");
+  position: relative;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  justify-content: center;
+  margin: 0 auto;
+  max-height: 600px;
+  max-width: 1424px;
+}
+
+.splashImage:after {
+  padding-top: 42.125%;
+  display: block;
+  content: "";
+}
+
+#splashImageCover {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.splashContent {
+  vertical-align: center;
+}
+
+#blackOverlay {
+  background-color: #18121e;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Nav Bar
+------------------------------------------------------------- */
+
+nav {
+  background: #18121e;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  border-bottom-style: double;
+  border-bottom-color: #eac67a;
+  z-index: 99;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav li {
+  float: left;
+  padding: 0;
+  margin: 0;
+  border-right: black;
+}
+
+nav li a {
+  display: inline-block;
+  color: white;
+  padding: 0.25rem 2.5rem;
+  text-align: center;
+  font-size: 3rem;
+  text-decoration: none;
+  min-width: 10rem;
+}
+
+nav li a:hover {
+  background-color: rgb(43, 33, 53);
+  color: white;
+}
+
+nav a.active {
+  background-color: #244247;
+}
+
+nav a.active:hover {
+  background-color: #244247;
+}
+
+/* Main and body general stylings
+------------------------------------------------------------- */
+
+main {
+  background: #6e3b38;
+  margin-top: 0;
+}
+
+body {
+  color: #ffffff;
+  background-color: #233237;
+}
+
+article {
+  padding: 3rem 0;
+}
+
+main p {
+  text-indent: 3rem;
+  padding: none;
+  margin: 1rem;
+}
+
+/* Background color, text color
+------------------------------------------------------------- */
+
+.gunmetal {
+  background: #244247;
+}
+
+.navyBlue {
+  background: #18121e;
+}
+
+.maroon {
+  background: #984843;
+}
+
+.gold {
+  background: #eac67a;
+}
+
+.gold-text {
+  color: #eac67a;
+}
+
+/* 
+------------------------------------------------------------- */
