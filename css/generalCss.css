@@ -13,6 +13,10 @@
   user-select: none;
 }
 
+.centeredContent {
+  text-align: center;
+  justify-content: center;
+}
 /* Header and splash images
 ------------------------------------------------------------- */
 header {
