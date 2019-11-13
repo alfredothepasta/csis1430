@@ -5,13 +5,8 @@
 }
 
 .selection-link {
-  background: linear-gradient(
-    90deg,
-    rgba(110, 59, 56, 1) 0.1%,
-    rgba(110, 59, 56, 1) 5%,
-    rgba(110, 59, 56, 1) 95%,
-    rgba(110, 59, 56, 1) 99.9%
-  );
+  background: rgba(110, 59, 56, 1);
+  margin: 0 3rem;
 }
 
 .selection-link:hover {
@@ -40,4 +35,9 @@ section.category-section {
   border: white;
   border-bottom-style: solid;
   border-bottom-width: 0.1rem;
+}
+
+.selectable {
+  width: 100%;
+  height: 100%;
 }
