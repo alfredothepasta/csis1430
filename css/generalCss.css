@@ -17,6 +17,7 @@
   text-align: center;
   justify-content: center;
 }
+
 /* Header and splash images
 ------------------------------------------------------------- */
 header {
@@ -133,7 +134,7 @@ nav a.active:hover {
 ------------------------------------------------------------- */
 
 main {
-  background: #803d38ce;
+  background: #6e3b38;
   margin-top: 0;
 }
 
@@ -148,6 +149,8 @@ article {
 
 main p {
   text-indent: 3rem;
+  padding: none;
+  margin: 1rem;
 }
 
 /* Background color, text color
