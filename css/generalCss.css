@@ -145,11 +145,14 @@ nav a.active:hover {
 main {
   background: #6e3b38;
   margin-top: 0;
+  height: 100%;
 }
 
 body {
   color: #ffffff;
   background-color: #233237;
+  height: 100%;
+  margin: 0;
 }
 
 article {
