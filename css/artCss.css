@@ -46,6 +46,73 @@ section.category-section {
 /* Gallery classes
 ------------------------------------------------------------- */
 
+@media (min-width: 550px){
+  .leftBorder {
+    border-left: 2px double black;
+  }
+}
+
+.galleryContainer{
+  margin: 0 2rem;
+}
+
 div.gallery {
-  border: 1px solid #ccc;
+  border-radius: 1rem;
+  border: 1px solid #eac67a;
+  width: 100%;
+  height: auto;
+  margin-bottom: 2rem;
+  background-color: #eac67a;
+}
+
+div.gallery img{
+  width: 95%;
+  padding-top: 2%;
+  height: auto;
+}
+
+/* Gallery sidebar
+------------------------------------------------------------- */
+
+nav.navSideBar{
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  min-width: 125px; 
+  z-index: 90; 
+  background-color: #244247;
+}
+
+@media (min-width: 550px){
+  .paddingBlock {
+    height: 50px;
+    background-color: #244247;
+  }
+}
+
+nav.navSideBar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  
+}
+
+nav.navSideBar li {
+  margin: 0;
+  /* border-top: 1px solid black; */
+  
+}
+
+nav.navSideBar li a {
+  display: block;
+  width: 100%;
+  padding: .5rem 0 .5rem 1rem;
+  color: white;
+  background-color: #244247;
+  text-decoration: none;
+}
+
+nav.navSideBar li a:hover {
+  background-color: #18121e;
 }

@@ -92,7 +92,7 @@ header h1 {
 /* Nav Bar
 ------------------------------------------------------------- */
 
-nav {
+nav.topNav {
   background: #18121e;
   position: -webkit-sticky;
   position: sticky;
@@ -102,21 +102,21 @@ nav {
   z-index: 99;
 }
 
-nav ul {
+nav.topNav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
 }
 
-nav li {
+nav.topNav li {
   float: left;
   padding: 0;
   margin: 0;
   border-right: black;
 }
 
-nav li a {
+nav.topNav li a {
   display: inline-block;
   color: white;
   padding: 0.25rem 2.5rem;
@@ -126,16 +126,16 @@ nav li a {
   min-width: 10rem;
 }
 
-nav li a:hover {
+nav.topNav li a:hover {
   background-color: rgb(43, 33, 53);
   color: white;
 }
 
-nav a.active {
+nav.topNav a.active {
   background-color: #244247;
 }
 
-nav a.active:hover {
+nav.topNav a.active:hover {
   background-color: #244247;
 }
 
@@ -155,6 +155,10 @@ body {
   margin: 0;
 }
 
+html {
+  height: 100%;
+}
+
 article {
   padding: 3rem 0;
   height: 100%;
@@ -170,19 +174,27 @@ main p {
 ------------------------------------------------------------- */
 
 .gunmetal {
-  background: #244247;
+  background-color: #244247;
+}
+
+.darkGunmetal {
+  background-color: #233237;
 }
 
 .navyBlue {
-  background: #18121e;
+  background-color: #18121e;
 }
 
 .maroon {
-  background: #984843;
+  background-color: #984843;
+}
+
+.darkMaroon {
+  background-color: #6e3b38;
 }
 
 .gold {
-  background: #eac67a;
+  background-color: #eac67a;
 }
 
 .gold-text {
