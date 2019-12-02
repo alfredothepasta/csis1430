@@ -12,6 +12,39 @@ let images: string[] = [
     '011',
 ];
 
+document.addEventListener('keydown', function (e) {
+    if (e.keyCode == 39) {
+        try {
+            navRight();
+        }
+        finally {
+
+        }
+    }
+});
+
+document.addEventListener('keydown', function (e) {
+    if (e.keyCode == 37) {
+        try {
+            navLeft();
+        }
+        finally {
+
+        }
+    }
+});
+
+document.addEventListener('keydown', function (e) {
+    if (e.keyCode == 27) {
+        try {
+            closeGallery();
+        }
+        finally {
+
+        }
+    }
+})
+
 let main: HTMLElement = document.getElementById('gallery');
 
 function gallery(div: HTMLDivElement) {
@@ -27,7 +60,7 @@ function gallery(div: HTMLDivElement) {
     let image: HTMLImageElement = document.createElement('img');
     image.src = `..\\images\\figureDrawing\\${images[idNum]}.jpg`;
     image.id = `${id}`;
-    image.className = 'currentImage'
+    image.className = 'currentImage unselectable'
     let leftArrow: HTMLElement = document.createElement('i');
     leftArrow.className = 'left';
     leftArrow.id = 'left';
@@ -58,7 +91,8 @@ function gallery(div: HTMLDivElement) {
 
     leftArrow.addEventListener('click', function () {
         navLeft();
-    })
+    });
+
     // `<div class="galleryBg">
     //     <img src="..\\images\\figureDrawing\\${id}.jpg" alt="" srcset="">
     //     <i class="right" id="right"></i>
@@ -90,6 +124,7 @@ for (let i = 0; i < images.length; i++) {
     galleryDiv.style.cursor = 'pointer';
     galleryDiv.id = /*`${image}`*/ `${i}`;
     imgElement.src = `..\\images\\figureDrawing\\thumbnails\\${image}.jpg`;
+    imgElement.className = 'unselectable';
     contentDiv.appendChild(galleryDiv);
     galleryDiv.appendChild(imgElement);
     rowDiv.appendChild(contentDiv);
@@ -112,7 +147,7 @@ function navRight() {
     console.log(currentImage.src);
     console.log(index);
     let lastIndex = images.length - 1;
-    if (newIndex == lastIndex) {
+    if (newIndex > lastIndex) {
         newIndex = 0;
     }
 

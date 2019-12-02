@@ -11,6 +11,33 @@ let images = [
     '010',
     '011',
 ];
+document.addEventListener('keydown', function (e) {
+    if (e.keyCode == 39) {
+        try {
+            navRight();
+        }
+        finally {
+        }
+    }
+});
+document.addEventListener('keydown', function (e) {
+    if (e.keyCode == 37) {
+        try {
+            navLeft();
+        }
+        finally {
+        }
+    }
+});
+document.addEventListener('keydown', function (e) {
+    if (e.keyCode == 27) {
+        try {
+            closeGallery();
+        }
+        finally {
+        }
+    }
+});
 let main = document.getElementById('gallery');
 function gallery(div) {
     let id = div.getAttribute('id');
@@ -24,7 +51,7 @@ function gallery(div) {
     let image = document.createElement('img');
     image.src = `..\\images\\figureDrawing\\${images[idNum]}.jpg`;
     image.id = `${id}`;
-    image.className = 'currentImage';
+    image.className = 'currentImage unselectable';
     let leftArrow = document.createElement('i');
     leftArrow.className = 'left';
     leftArrow.id = 'left';
@@ -78,6 +105,7 @@ for (let i = 0; i < images.length; i++) {
     galleryDiv.style.cursor = 'pointer';
     galleryDiv.id = /*`${image}`*/ `${i}`;
     imgElement.src = `..\\images\\figureDrawing\\thumbnails\\${image}.jpg`;
+    imgElement.className = 'unselectable';
     contentDiv.appendChild(galleryDiv);
     galleryDiv.appendChild(imgElement);
     rowDiv.appendChild(contentDiv);
@@ -96,7 +124,7 @@ function navRight() {
     console.log(currentImage.src);
     console.log(index);
     let lastIndex = images.length - 1;
-    if (newIndex == lastIndex) {
+    if (newIndex > lastIndex) {
         newIndex = 0;
     }
     console.log(newIndex);
