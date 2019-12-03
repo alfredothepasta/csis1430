@@ -148,7 +148,6 @@ main {
   flex-grow: 1;
 }
 
-
 html,body {
   height: auto;
   display:flex;
@@ -168,13 +167,13 @@ body > * {
 
 article {
   padding: 3rem 0;
-  height: 100%;
 }
 
 main p {
   text-indent: 3rem;
   padding: none;
   margin: 1rem;
+  margin-bottom: 0;
 }
 
 /* Background color, text color

@@ -43,6 +43,10 @@ section.category-section {
   height: 100%;
 }
 
+
+.thumbnail {
+  max-width: 100%;
+}
 /* Gallery classes
 ------------------------------------------------------------- */
 
