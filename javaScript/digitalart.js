@@ -8,6 +8,7 @@ let images = [
     '007',
     '008',
     '009',
+    '010',
 ];
 document.addEventListener('keydown', function (e) {
     if (e.keyCode == 39) {
