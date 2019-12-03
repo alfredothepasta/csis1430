@@ -2,41 +2,60 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link rel="stylesheet" href="css/skeleton.css" />
-  <link rel="stylesheet" href="css/normalize.css" />
-  <link rel="stylesheet" href="css/generalCss.css" />
-  <title>ShowCase Website</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/skeleton.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/generalCss.css" />
+    <link rel="stylesheet" href="css\animation.css">
+    <title>ShowCase Website</title>
 </head>
 
 <body>
-  <!-- Standard navbar -->
-  <nav class="topNav">
-    <div class="container unselectable">
-      <ul>
-        <li class="active">
-          <a href="index.html" >Home</a>
-        </li>
-        <li><a href="art/categories.html">Art</a></li>
-        <li><a href="#" class="active">Animation</a></li>
-        <li><a href="about.html">About</a></li>
-      </ul>
-    </div>
-  </nav>
+    <!-- Standard navbar -->
+    <nav class="topNav">
+        <div class="container unselectable">
+            <ul>
+                <li class="active">
+                    <a href="index.html">Home</a>
+                </li>
+                <li><a href="art/categories.html">Art</a></li>
+                <li><a href="#" class="active">Animation</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </div>
+    </nav>
 
-  <main>
-      <div class="row">
-          <div class="two columns">
-              <div></div>
-            </div>
-            <section class="eight columns">
-                    <h1 class="gold-text unselectable centeredContent">
-                            Figure Drawing Gallery
-                        </h1>
-            </section>
-      </div>
-  </main>
+    <main class="container">
+        <section class="darkMaroon">
+                <h1 class="gold-text unselectable centeredContent">
+                    Animations
+                </h1>
+        </section>
+        <section class="container">
+            <hr>
+            <p>Below are most of the animations I made while working towards my animation degree at Salt Lake Community College. They are laid out in chronological order, showing my progress as an animator over the course of the years.</p>
+            <hr>
+        </section>
+        <section class="container">
+            <h1 class="gold-text unselectable centeredContent" id="animationTitle">title</h1>
+            <p id="videoDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat et facere at sint repellendus. Accusamus, perspiciatis. Et, blanditiis ducimus quae porro natus voluptates, nemo suscipit minima at dolores maiores explicabo.</p>
+            <br>
+            <section id="videoSection" class="iframe-container"></section>
+        </section>
+        <br>
+        <nav id="navigation" class="animationNav">
+                <ul>
+                    <li><a href="#" id="last">Last</a></li>
+                    <li><a href="#" id="next">Next</a></li>
+                </ul>
+            </nav>
+    </main>
+    
 
-  </body> 
+    <footer class="container darkMaroon"></footer>
+
+    <script src="javaScript\animations.js"></script>
+
+</body>

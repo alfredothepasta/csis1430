@@ -1,0 +1,70 @@
+
+/* iframe Sizing
+------------------------------------------------------------- */
+
+.iframe-container {
+    overflow: hidden;
+    /* Calculated from the aspect ration of the content 
+    (in case of 16:9 it is 9/16= 0.5625) */
+    padding-top: 56.25%;
+    position: relative;
+  }
+   
+  .iframe-container iframe {
+     border: 0;
+     height: 100%;
+     left: 0;
+     position: absolute;
+     top: 0;
+     width: 100%;
+  }
+
+  /* Next/last buttons
+------------------------------------------------------------- */
+
+nav.animationNav {
+    background: #18121e;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    border-top-style: double;
+    border-top-color: #eac67a;
+    z-index: 99;
+  }
+  
+  nav.animationNav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  nav.animationNav li {
+    float: left;
+    padding: 0;
+    margin: 0;
+    border-right: black;
+    width: 50%;
+  }
+  
+  nav.animationNav li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+    text-decoration: none;
+    width: 100%;
+  }
+  
+  nav.animationNav li a:hover {
+    background-color: rgb(43, 33, 53);
+    color: white;
+  }
+  
+  nav.animationNav a.active {
+    background-color: #244247;
+  }
+  
+  nav.topNav a.active:hover {
+    background-color: #244247;
+  }
